@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Histoire</title>
+    <link rel= "stylesheet" href="style.css">
+    <style>
+        body.histoires {
+           background-color: rgb(251, 227, 227);/* Chemin vers votre image de fond */
+            background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la zone */
+            background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
+            background-position: center center; /* Centrer l'image horizontalement et verticalement */
+            background-attachment: fixed; /* Empêcher le défilement de l'image de fond */
+            color: rgb(176, 6, 6); /* Couleur du texte */
+             margin-left: 30px;
+            font-family: Cambria, serif;
+        }
+
+        section.h_matin .h_soir .h_jour {
+            background-color: rgba(88, 85, 85, 0.5); /* Couleur de fond transparente pour les sections */
+            padding: 20px; /* Espacement interne des sections */
+            margin: 20px auto; /* Marge externe pour centrer les sections horizontalement */
+            max-width: 800px; /* Largeur maximale des sections */
+            
+        }
+        
+        
+        
+
+        .song {
+            display: flex;
+            align-items: center; 
+        }
+        
+         .song img {
+            margin-right: 190px; /* Espacement horizontal entre les images */
+             margin-left: 90px;
+              margin-bottom: 20px;
+        }
+        
+         .song audio {
+             margin-right: 120px; /* Espacement horizontal entre les images */
+             margin-left: 50px;
+              margin-bottom: 20px;
+        }
+
+        .song-title {
+            flex: 1;
+            color: rgb(0, 0, 0);
+            cursor: pointer; /* Curseur pointeur pour indiquer la possibilité de cliquer */
+            margin-left: 80px;
+            font-family: Cambria, serif;
+        }
+
+        .song-title:hover {
+            text-decoration: underline; /* Souligner le titre au survol */
+        }
+
+        .audio-controls {
+            margin-top: 10px; /* Espacement depuis le haut */
+        }
+
+        .audio-controls button {
+            background-color: #4CAF50; /* Couleur de fond des boutons */
+            color: white; /* Couleur du texte des boutons */
+            padding: 5px 10px; /* Espacement interne des boutons */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Animation de transition */
+        }
+
+        .audio-controls button:hover {
+            background-color: #45a049; /* Couleur de fond des boutons au survol */
+        }
+        
+        image-under-text {
+            position: relative; /* Permet d'utiliser position:absolute pour l'image */
+        }
+
+        .image-under-text img {
+            position: absolute; /* Positionnement absolu par rapport à son conteneur */
+            bottom: 0; /* Positionnement en bas */
+            left: 0; /* Positionnement à gauche */
+        }
+        
+    
+        
+    </style>
+</head>
+    
+             
+    <body class="histoires">
+    
+        
+        <section class="h_matin">
+        <h2> Histoires matinales </h2> 
+
+            <div class="song" id="song1">
+                <h3 class="song-title" onclick="downloadMusic('Musique/Edmond_Jaloux_-_Le_Reveillon_de_Violette.mp3')">      Le reveillon de violette</h3>
+                <h3 class="song-title" onclick="downloadMusic('Musique/hans_christian_andersen_-_la_reine_des_neiges.mp3')">La reine des neiges</h3>
+                <h3 class="song-title" onclick="downloadMusic('Musique/anonyme_-_la_parole.mp3')">La parole</h3>
+            </div>
+
+            <div class="song" id="song2">
+              <img src="image/violette.jpg" alt="Instagram" width="200cm" height="200cm">
+              <img src="image/reine.jpg" alt="Instagram" width="200cm" height="200cm">
+              <img src="image/parole.jpg" alt="Instagram" width="200cm" height="200cm">
+                
+            </div>    
+
+            <div class="song" id="song3">
+                <audio id="Violette" controls>
+                    <source src="Musique/Edmond_Jaloux_-_Le_Reveillon_de_Violette.mp3" type="audio/mp3">
+                </audio>
+                
+                <audio id="Violette" controls>
+                    <source src="Musique/hans_christian_andersen_-_la_reine_des_neiges.mp3" type="audio/mp3">
+                </audio>
+                
+                <audio id="Violette" controls>
+                    <source src="Musique/anonyme_-_la_parole.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+
+        
+        <section class="h_jour">
+            <h2> Histoires journalières </h2> 
+            <div class="song" id="song4">
+                <h3 class="song-title" onclick="downloadMusic('Musique/hans_christian_andersen_-_la_petite_fille_aux_allumettes.mp3')">La petite fille aux allumettes</h3>     
+                 <h3 class="song-title" onclick="downloadMusic('Musique/les_freres_grimm_-_tom_-_pouce.mp3')">Les aventures de Tom</h3>
+                 <h3 class="song-title" onclick="downloadMusic('Musique/les_freres_grimm_-_le_vaillant_petit_tailleur.mp3')">Le vaillant petit tailleur</h3>
+            </div>
+
+            <div class="song" id="song5">
+                
+                 <img src="image/fille.jpg" alt="Instagram" width="200cm" height="200cm">
+              <img src="image/tom.jpg" alt="Instagram" width="200cm" height="200cm">
+              <img src="image/tailleur.jpg" alt="Instagram" width="200cm" height="200cm">
+                
+                
+            </div>
+
+            <div class="song" id="song6">
+                <audio id="Violette" controls>
+                    <source src="Musique/hans_christian_andersen_-_la_petite_fille_aux_allumettes.mp3" type="audio/mp3">
+                </audio>
+                
+                 <audio id="Violette" controls>
+                    <source src="Musique/les_freres_grimm_-_tom_-_pouce.mp3" type="audio/mp3">
+                </audio>
+                
+                <audio id="Violette" controls>
+                    <source src="Musique/les_freres_grimm_-_le_vaillant_petit_tailleur.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+
+        <section class="h_soir">
+            <h2> Histoires du soir </h2> 
+            <div class="song" id="song7">
+                <h3 class="song-title" onclick="downloadMusic('Le petit chapreon rouge')">Le petit chapreon rouge</h3>     
+                <h3 class="song-title" onclick="downloadMusic('Arnaud et son histoire')">Arnaud et son histoire</h3>
+                <h3 class="song-title" onclick="downloadMusic('les étoiles')">Les étoiles</h3>
+                
+            </div>
+
+            <div class="song" id="song8">
+                
+              <img src="image/rouge.jpg" alt="Instagram" width="200cm" height="200cm">
+              <img src="image/arnaud.jpg" alt="Instagram" width="200cm" height="200cm">
+              <img src="image/etoile.jpg" alt="Instagram" width="200cm" height="200cm">
+                
+            </div>
+
+            <div class="song" id="song9">
+               <audio id="Violette" controls>
+                    <source src="Musique/charles_perrault_-_le_petit_chaperon_rouge-1.mp3" type="audio/mp3">
+                </audio>
+                
+                <audio id="Violette" controls>
+                    <source src="Musique/histoire-d_arnaud-mp3.mp3" type="audio/mp3">
+                </audio>
+                
+                <audio id="Violette" controls>
+                    <source src="Musique/alphonse_daudet_-_les_toiles_rcit_d_un_berger_provenal.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+
+    
+        
+        <script>
+
+            function downloadMusic(audioSrc) {
+                var a = document.createElement('a');
+                a.href = audioSrc;
+                a.download = audioSrc.substring(audioSrc.lastIndexOf('/') + 1);
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        </script>       
+
+    </body>
+</html>

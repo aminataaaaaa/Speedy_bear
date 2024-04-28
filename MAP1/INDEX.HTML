@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Acceuil</title>
+    <link rel= "stylesheet" href="style.css">
+    <style>
+        /* Style pour la barre d'outils */
+        nav {
+            display: flex; /* Utiliser Flexbox pour aligner les éléments */
+            justify-content: space-between; /* Espacement égal entre les éléments */
+            align-items: center; /* Aligner verticalement les éléments au centre */
+            background-color: #ffffff; /* Couleur de fond de la barre d'outils */
+            padding: 10px 20px; /* Espacement intérieur de la barre d'outils */
+        }
+
+        /* Style pour le logo */
+        nav img {
+            height: 100px; /* Hauteur du logo */
+        }
+
+        /* Style pour la liste de liens */
+        nav ul {
+            list-style: none; /* Supprimer les puces de liste */
+            margin: 0; /* Supprimer les marges par défaut */
+            padding: 0; /* Supprimer les espacements internes par défaut */
+        }
+
+        /* Style pour chaque lien */
+        nav ul li {
+            display: inline; /* Afficher les éléments de la liste en ligne */
+            margin-left: 20px; /* Espacement entre les liens */
+        }
+
+        /* Style pour les liens */
+        nav ul li a {
+            text-decoration: none; /* Supprimer la décoration de texte par défaut */
+            color: rgb(0, 0, 0); /* Couleur du texte */
+            /* Mettre le texte en gras */
+        }
+
+        /* Début section acceuil */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sec_acceuil {
+    width: 100%; /* Prend toute la largeur de la page */
+    height: 45vh; /* Hauteur de la fenêtre */
+    background-image: url('image/voit.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centre le contenu verticalement */
+    flex-direction: column;
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte horizontalement */
+    position: relative; /* Ajout de position relative pour positionner l'image absolue */
+    transform: scale(1.6) translate(150px, 70px);
+}
+
+
+
+
+        .center-content {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        /* Fin section acceuil */
+
+        /* Début à propos */
+        .texte {
+            background-color: rgb(251, 227, 227); /* Couleur de fond transparente pour les sections */
+            padding: 80px; /* Espacement interne des sections */
+            margin: 70px auto; /* Marge externe pour centrer les sections horizontalement */
+            max-width: 500px; /* Largeur maximale des sections */ 
+            transform: translate(0px, 155px);
+
+            
+            
+            font-size: 14px; /* Changer la taille du texte */
+    text-align: justify; /* Justifier le texte */
+    font-family: Century Gothic, sans-serif; /* Changer la police du texte */
+    margin-top: 100px; /* Changer la distance en Y */
+    margin-left: 240px; /* Changer la distance en X */
+        }
+        
+        .titre-about {
+    font-size: 24px; /* Taille de police agrandie pour le titre */
+    margin-bottom: 20px; /* Augmentation de la marge basse entre le titre et le texte */
+}
+
+        .about {
+            display: flex; /* Affiche les éléments en ligne */
+            align-items: center; /* Centre les éléments verticalement */
+            /*gap: 20px;  Espacement entre les éléments */
+        }
+
+        .speedybear {
+            max-width: calc(25% - 0px); /* Taille maximale de l'image (moitié de la largeur moins l'espacement) */
+            position: relative;
+            left: -280px; /* Déplace l'image vers le haut pour qu'elle monte légèrement sur le côté du contour du texte */
+            top: 165px;
+            background-attachment: fixed;
+        }
+
+        /* Fin à propos */
+
+        /* Début services */
+        .Services {
+            background-color: BLANCHE aliceblue;
+            margin-top: 150px;
+        }
+
+        .titre_services {
+            text-align: center; /* Centrer le texte */
+            font-size: 24px;
+            
+        }
+
+        .boutons {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+        }
+
+        button {
+            background-color: rgb(3, 0, 0);
+            color:  rgb(255, 255, 255);
+            padding: 1.5rem 4rem;
+            border-radius: 0%;
+            cursor: pointer;
+                font-size: 18px; /* Augmenter la taille du texte */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Fin services */
+
+        /* Début histoire */
+        body.histoires {
+            background-image: url('image/hist.jpg'); /* Chemin vers votre image de fond */
+            background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la zone */
+            background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
+            background-position: center center; /* Centrer l'image horizontalement et verticalement */
+            background-attachment: fixed; /* Empêcher le défilement de l'image de fond */
+            color: rgb(176, 6, 6); /* Couleur du texte */
+        }
+
+        section.h_matin .h_soir .h_jour {
+            background-color: rgba(88, 85, 85, 0.5); /* Couleur de fond transparente pour les sections */
+            padding: 20px; /* Espacement interne des sections */
+            margin: 20px auto; /* Marge externe pour centrer les sections horizontalement */
+            max-width: 800px; /* Largeur maximale des sections */
+        }
+
+        .song {
+            display: flex;
+            align-items: center; 
+        }
+
+        .song-title {
+            flex: 1;
+            color: rgb(0, 0, 0);
+            cursor: pointer; /* Curseur pointeur pour indiquer la possibilité de cliquer */
+        }
+
+        .song-title:hover {
+            text-decoration: underline; /* Souligner le titre au survol */
+        }
+
+        .audio-controls {
+            margin-top: 10px; /* Espacement depuis le haut */
+        }
+
+        .audio-controls button {
+            background-color: #4CAF50; /* Couleur de fond des boutons */
+            color: white; /* Couleur du texte des boutons */
+            padding: 5px 10px; /* Espacement interne des boutons */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Animation de transition */
+        }
+
+        .audio-controls button:hover {
+            background-color: #45a049; /* Couleur de fond des boutons au survol */
+        }
+
+        /* Fin section histoire */
+
+        /* Début footer */
+        .contact-bar {
+            background-color: rgb(251, 227, 227);
+            height: 5cm;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 25px;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info img {
+            margin-right: 10px; /* Ajouter un espace de 10 pixels à droite de chaque image */
+        }
+
+        .consultation-button {
+            margin-left: 20px;
+            margin-right: 150px;
+        }
+
+        .subscribe-input {
+            background-color: rgb(251, 227, 227);
+            width: 350px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 0px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .subscribe-input::placeholder {
+            color: black; /* Changer la couleur du texte du placeholder en noir */
+        }
+
+        .consultation-button a {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 13px 20px;
+            border-radius: 0px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .consultation-button a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Fin footer */
+    </style>
+</head>
+<body class="acceuil">
+    <nav>
+        <img src="image/logoo.png" alt="">
+        <ul>
+          <li><a href="#about-us">Acceuil</a></li>
+          <li><a href="#about-us">A Propos</a></li>
+          <li><a href="#work">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="sec_acceuil" style="width: 1000px; margin-left: 0%;margin-right: 0;">
+        <div class="center-content">
+            <h1>HAK vous souhaite la bienvenue</h1>
+            <h3>Une sécurité garantie avec des enfants divertis !</h3>
+            
+        </div>
+    </section>
+
+    <section class="about">
+        <section class="texte" >
+            <h3 class="titre-about"> A Propos</h3>
+                Le projet de sécurité routière que nous avons développé se matérialise sous la forme d’un dispositif ingénieux nommé « Speedy Bear ». Cet appareil innovant est conçu pour ressembler à une charmante peluche, équipé d’un écran facial interactif. Au-delà de son apparence ludique, Speedy Bear remplit une double fonction cruciale pour la sécurité et le divertissement. D’une part, il offre aux enfants des moments d’évasion en racontant des histoires captivantes, rendant ainsi les voyages plus agréables. 
+                D’autre part, sa technologie avancée de détection de vitesse surveille en permanence la vitesse du véhicule. Si jamais la vitesse dépasse les limites autorisées, la lecture audio des histoires sera instantanément interrompue. De plus, le visage expressif de l’ours passera d’une expression joyeuse à une expression alerte, alertant ainsi le conducteur de la nécessité de ralentir. 
+                En alliant sécurité et divertissement, Speedy Bear s’impose comme un allié précieux dans la promotion d’une conduite responsable tout en offrant une expérience agréable aux enfants.
+        </section>
+        <img src="image/CONCOURS.jpeg" alt="" class="speedybear">
+    </section>
+
+    <section class="Services">
+        <h3 class="titre_services"> Services </h3>
+        <div class="boutons">
+            <a href="Trajet.html"><button> Charger mon trajet</button></a>
+            <a href="Histoire.html"><button> Télécharger une histoire </button></a>
+        </div>
+    </section>
+
+    
+    <footer class="contact-bar">
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>HAK</p>
+            <p>12 Rue de Blois</p>
+            <p>45100 Orléan</p>
+        </div>
+        <div>
+            <p>Tel : +33 6 15 78 90 77</p>
+            <p>Email : info@hak.com</p>
+            <img src="image/inst.png" alt="Instagram" width="20cm" height="20cm">
+            <img src="image/fb.png" alt="Facebook" width="20cm" height="20cm">
+            <img src="image/tw.png" alt="Twitter" width="20cm" height="20cm">
+        </div>
+        <div class="consultation-button">
+            <p>Abonnez-vous pour recevoir les nouveautés</p>
+            <form action="#">
+                <input type="email" class="subscribe-input" placeholder="Entrez votre adresse e-mail*" required>
+                <a href="Email.HTML">Rejoignez-nous</a>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
+
+
